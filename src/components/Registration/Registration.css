@@ -1,0 +1,116 @@
+.Registration{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 698px;
+    align-items: center;
+}
+.Heading{
+    margin: 5px 0 25px 20px;
+    width: 400px;
+}
+.Heading h5{
+    font-size: 25px;
+    margin-bottom: 9px;
+}
+.RegP{
+    color: gray;
+    font-size: 12px;
+}
+.Form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.Form label{
+    font-weight: 600;
+    margin: 8px 0;
+}
+.Form input{
+    width: 380px;
+    height: 42px;
+    border-radius: 100px;
+    border: 1px solid gray;
+    font-size: 17px;
+    padding-left: 10px;
+}
+.Form input:focus{
+    outline: 1px solid #0F8FAC;
+}
+.InputContainer{
+    display: flex;
+    flex-direction: column;
+}
+.ForgotPassword{
+    font-size: 14px;
+    margin: 5px 0 0 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+}
+.ForgotPassword:hover{
+    color: #0F8FAC;
+}
+.Registration button{
+    width: 380px;
+    height: 42px;
+    border-radius: 100px;
+    background-color: #0F8FAC;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+.RegisterLink{
+    margin-top: 20px;
+}
+.Orspans{
+    margin: 20px;
+    position: relative;
+}
+.Orspans span{
+   position: relative;
+   z-index: 1;
+   background: #fff;
+}
+.Orspans span::after{
+    content: "";
+    height: 1px;
+    background-color: rgb(181, 181, 181);
+    width: 400px;
+    inset: 50%;
+    translate: -50% -50%;
+    position: absolute;
+    z-index: -1;
+}
+.RegistrationButtons{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.RegistrationButtons button{
+    background-color: #fff;
+    border: 1px solid gray;
+    color: black;
+    font-size:14px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.GoogleSignIn img{
+    width: 20px;
+    height: 20px;
+}
+.FacebookSignIn img{
+    width: 20px;
+    height: 20px;
+}
+.Error{
+    font-size: 13px;
+    color: red;
+}

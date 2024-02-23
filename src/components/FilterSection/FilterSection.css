@@ -1,0 +1,153 @@
+.SideBarFilterBG{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  inset: 0;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.435);
+}
+.sidebarFilter{
+  left: 0 !important;
+}
+.ToggleFilterBtn{
+  display: none;
+  cursor: pointer;
+  border: none;
+  background-color: #0F8FAC;
+  color: white;
+  width: 85px;
+  height: 38px;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 20px ;
+}
+.ToggleFilterBtn::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 103%;
+  width: inherit;
+  height: 3px;
+  background-color: #0F8FAC;
+  transition: width 0.4s ease-in;
+}
+.ToggleFilterBtn:hover::before{
+  width: 0px;
+}
+.FilterSection{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    
+    padding: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
+}
+.FilterSectionHeading{
+  font-size: 1.3rem;
+  margin: 20px 0;
+}
+.SearchInputContainer{
+  display: flex;
+  align-items: center;
+  width: 310px;
+  border: 1px solid #767676;
+  padding: 5px 15px;
+  border-radius: 100px;
+}
+.FilterSectionSearchSvg{
+  stroke: #0f8fac;
+}
+.FilterSectionSearch{
+  font: 1.2rem;
+  width: 270px;
+  height: 30px;
+  border: none;
+}
+.FilterSectionSearch:focus{
+  outline: none;
+}
+.RangeSliderPriceInputs{
+    display: flex;
+    gap: 10px;
+}
+.Categories{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 280px;
+}
+.CategoriesHeading{
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #767676;
+}
+.CategoriesList{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.price-input{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.price-input input{
+  height:30px;
+  width: 66px;
+  padding: 5px;
+  border-radius: 100px;
+  outline: none;
+  border: 1px solid gray;
+  text-align: center;
+  margin-left: 5px;
+  color: #0f8fac;
+}
+.price-input input::-webkit-outer-spin-button,
+.price-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.field .dollar {
+  color: #0f8fac;
+}
+
+
+@media(max-width: 1424px){
+  .SearchInputContainer{
+    width: 290px;
+  }
+  .FilterSection{
+    width: 330px;
+  }
+}
+@media(max-width: 1400px){
+  .SearchInputContainer{
+    width: 255px;
+  }
+  .FilterSection{
+    width: 291px;
+  }
+}
+@media(max-width: 1200px){
+  .SearchInputContainer{
+    width: 290px;
+  }
+  .FilterSection{
+    width: 325px;
+  }
+}
+@media(max-width:990px){
+  .ToggleFilterBtn{
+    display: block;
+  }
+  .FilterSection{
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 5;
+    transition: 0.5s ease-in-out;
+  }
+}

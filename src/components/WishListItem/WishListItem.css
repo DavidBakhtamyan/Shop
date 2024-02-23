@@ -1,0 +1,19 @@
+.WishListItem{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px;
+}
+.WishListItem img{
+    width: 67px;
+    height: 84px;
+    object-fit: scale-down;
+}
+.WishListItemInfo span{
+    color: #0F8FAC;
+}
+.WishListItemInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}

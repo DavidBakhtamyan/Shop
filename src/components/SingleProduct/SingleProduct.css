@@ -1,0 +1,221 @@
+.SingleProduct{
+    width: 100vw;
+    height: 150vh;
+}
+.SingleProductContent{
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+    gap: 20px;
+    padding-bottom: calc(45px + (100 - 45) * ((100vw - 320px) / (1920 - 320)));
+    padding-top: calc(45px + (100 - 45) * ((100vw - 320px) / (1920 - 320)));
+}
+.SingleProductHeading {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.SingleProductHeading p{
+    color: black;
+    font-size: 17px;
+}
+.RatingContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.SingleProductHeading .OldPrice{
+    text-decoration: line-through;
+    color: #0F8FAC;
+    font-size: 20px;
+    font-weight: 600;
+}
+.Prices{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Prices .Price{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.SingleProductImg img{
+    width: 550px;
+    aspect-ratio: 1;
+    object-fit: scale-down;
+}
+.Description{
+    font-size: 16px !important;
+    color:rgb(148, 148, 148) !important;
+}
+.SingleProductInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    margin-left: 20px;
+}
+.Buttons{
+    display: flex;
+}
+.ProductParametrs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ColorsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Colors{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+.Colors .ColorItem{
+    cursor: pointer;
+    aspect-ratio: 1;
+    width: 25px;
+    border-radius: 50%;
+    position: relative;
+}
+.Colors  .ActiveColor::after{
+    content: "";
+    background-image: url(https://themes.pixelstrap.com/oslo/assets/icons/svg/tick.svg);
+    inset: 50%;
+    translate: -50% -50%;
+    height: 12px;
+    width: calc(12px + (17 - 12) * ((100vw - 320px) / (1920 - 320)));
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.Colors  .pink{
+    background-color: #f3c0d7;
+}
+.Colors .yellow{
+    background-color: #f9ede1;
+}
+.Colors .orange{
+    background-color: #fcded6;
+}
+.Colors .blue{
+    background-color: rgba(15,143,172,0.1);    
+}
+
+.Size{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Size .Sizes{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+.Size .Sizes li{
+    cursor: pointer;
+    aspect-ratio: 1;
+    width: 30px;
+    border: 1px solid rgb(148, 148, 148);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Size .Sizes .ActiveSize{
+    background-color: #0F8FAC;
+    color: white;
+    border: #0F8FAC;
+}
+.Buttons{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.Buttons .AddToCart{
+    cursor: pointer;
+    border: none;
+    background-color: #0F8FAC;
+    color: white;
+    width: 272px;
+    height: 39px;
+    border-radius: 2px;
+    position: relative;
+}
+.Buttons .AddToWishlist{
+    cursor: pointer;
+    width: 272px;
+    height: 39px;
+    border-radius: 2px;
+    background-color: transparent;
+    border: 1px solid #0F8FAC;
+    color: #0F8FAC;
+    transition: 0.2s ease-in-out;
+}
+.Buttons .AddToWishlist:hover{
+    background-color: #0F8FAC;
+    color: white;
+}
+.Buttons .AddToCart::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    top: 104%;
+    width: inherit;
+    height: 3px;
+    background-color: #0F8FAC;
+    transition: width 0.2s ease-in;
+}
+.Buttons .AddToCart:hover::before{
+    width: 0px;
+}
+@media (max-width: 1424px){
+    .SingleProductContent{
+        width: 1320px;
+    }
+}
+@media (max-width: 1400px){
+    .SingleProductContent{
+        width: 1140px;
+    }
+}
+@media (max-width: 1200px){
+    .SingleProductContent{
+        width: 100vw;
+        padding: 0 50px ; 
+    }
+    .SingleProductImg img{
+        width: 50vw;
+    }
+    .SingleProductInfo{
+        width: 50%;
+    }
+    .AddToCart {
+        width: 182px !important;
+    }
+    .AddToWishlist{
+        width: 182px !important;
+    }
+}
+@media(max-width: 768px){
+    .SingleProductContent{
+        flex-direction: column;
+        padding: 0 10px ; 
+    }
+    .SingleProductInfo{
+        width: 100vw;
+    }
+    .SingleProductImg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .SingleProductImg img{
+        width: 70%;
+    }
+}

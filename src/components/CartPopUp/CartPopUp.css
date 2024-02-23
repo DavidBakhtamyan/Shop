@@ -1,0 +1,72 @@
+.CartPopUp{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.606);
+    inset: 0;
+    z-index: 6;
+    animation: popupBgAnim 0.5s forwards;
+}
+.CartPopUpList::-webkit-scrollbar-track
+{
+	background-color: #F5F5F5;
+}
+
+.CartPopUpList::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.CartPopUpList::-webkit-scrollbar-thumb
+{
+	background-color: #787878;
+}
+.CartPopUpContent{
+    padding: 20px 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: 50%;
+    translate: -50% -50%;
+    background-color: #fff;
+    width: 600px;
+    height: 70%;
+    opacity: 0;
+    animation: popupAnim 0.5s forwards;
+}
+.CartPopUpList{
+    overflow: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@keyframes popupAnim {
+    from{
+        top: calc(50% - 200px);
+        opacity: 0;
+    }
+
+    to{
+        top: 50%;
+        opacity: 1;
+    }
+}
+@keyframes popupBgAnim {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+@media (max-width: 990px){
+    .CartPopUpContent{
+        width: 400px;
+    }
+}

@@ -1,0 +1,26 @@
+const Img ={
+    emptyWishList: require("./emptyWishList.png"),
+    cartItemPic: require("./cartItemPic.png"),
+    footerRight: require("./footerRight.png"),
+    footerLeft: require("./footerLeft.png"),
+    fbIcon: require("./fbIcon.png"),
+    googleIcon: require("./googleIcon.png"),
+    loginImg: require("./LoginImg.png"),
+    banner1: require("./banner1-1.png"),
+    banner2: require("./banner1-2.png"),
+    homeBanner:require("./homeBanner.png"),
+    bannerCard1: require("./bannerCard1.png"),
+    bannerCard2: require("./bannerCard2.png"),
+    FashionImg1: require("./FashionImg1.png"),
+    FashionImg2: require("./FashionImg2.png"),
+    FashionImg3: require("./FashionImg3.png"),
+    FashionImg4: require("./FashionImg4.png"),
+    specialProduct1: require("./specialProduct1.png"),
+    specialProduct2: require("./specialProduct2.png"),
+    specialProduct3: require("./specialProduct3.png"),
+    specialProduct4: require("./specialProduct4.png"),
+    specialProduct5: require("./specialProduct5.png"),
+    specialProduct6: require("./specialProduct6.png"),
+}
+
+export default Img

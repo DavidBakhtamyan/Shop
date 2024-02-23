@@ -1,0 +1,47 @@
+.AppliedFilters{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 20px;
+
+}
+.AppliedFilters h4{
+    margin-bottom: 10px;
+}
+.NoFilters{
+    color: rgb(154, 153, 153);
+}
+.AppliedFilters ul{
+    list-style: none;
+    display: flex;
+    align-content: start;
+    width: 276px;
+    min-height: 150px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.AppliedFilters ul li{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: gray;
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: 100px;
+    height: min-content;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.AppliedFilterLiSvg{
+    stroke: gray;
+}
+.AppliedFilters ul li:hover{
+    color: white;
+    border: 1px solid #0F8FAC;
+    background-color: #0F8FAC;
+}
+.AppliedFilters ul li:hover .AppliedFilterLiSvg{
+    stroke: white;
+}

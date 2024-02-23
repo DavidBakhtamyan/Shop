@@ -1,0 +1,17 @@
+.LoginWrapper{
+    display: flex;
+}
+.FromWrapper{
+    padding: 20px calc(20px + (200 - 20) * ((100vw - 991px) / (1920 - 991)));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.BgImg{
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}

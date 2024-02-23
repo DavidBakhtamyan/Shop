@@ -1,0 +1,35 @@
+.ShopBanner{
+    background-image: url(https://themes.pixelstrap.com/oslo/assets/images/inner-page/banner-p.jpg);
+    padding: calc(38px + (50 - 38) * ((100vw - 320px) / (1920 - 320))) 0;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.ShopHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.ShopLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.ShopLinks span {
+    color: gray;
+}
+.ActiveShopLink{
+    cursor: pointer;
+    color: #0F8FAC !important;
+}
+.HomeLink{
+    text-decoration: none;
+    color: black;
+}

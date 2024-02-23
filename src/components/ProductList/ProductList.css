@@ -1,0 +1,33 @@
+.ProductList{
+    min-height: 100vh;
+    width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    row-gap: 30px;
+}
+@media(max-width: 1424px){
+    .ProductList{
+        width: 990px;
+    }
+}
+@media(max-width: 1400px){
+    .ProductList{
+        width: 857px;
+    }
+}
+@media(max-width: 1200px){
+    .ProductList{
+        width: 634px;
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+@media(max-width:990px){
+    .ProductList{
+        width: 95vw;
+    }
+}
+@media(max-width: 575px){
+    .ProductList{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}

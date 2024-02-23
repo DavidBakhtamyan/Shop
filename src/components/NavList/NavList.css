@@ -1,0 +1,96 @@
+.HamburgerMenuNavList ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: 1rem;
+}
+.HamburgerMenuNavList li {
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+}
+.HamburgerMenuNavList li:hover {
+    color: #0F8FAC;
+}
+.HamburgerMenu{
+    display: none;
+    cursor: pointer;
+}
+.Bar{
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #000;
+    margin: 5px auto;
+}
+.HamburgerMenuControls{
+    display: none; 
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    z-index: 4;
+}
+.HamburgerMenuControls span{
+    color: rgb(126, 126, 126);
+    font-size: 1.5rem;
+}
+.HamburgerMenuControls button{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.HamburgerMenuBackground{
+    display: none;
+    background-color: #2626265b;
+    z-index: 4;
+}
+@media(max-width:1200px){
+    .HamburgerMenu{
+        display: block;
+    }
+    .HamburgerMenuNavList{
+        position: fixed;
+        top: 0;
+        left: -150%;
+        width: 300px;
+        height: 100%;
+        background-color: #ffffff;
+        padding: 50px;
+        transition: left 0.5s ease-in-out;
+        z-index: 4;
+    }
+    .HamburgerMenuNavList ul{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .HamburgerMenuControls{
+        display: flex;
+    }
+    .HamburgerMenuBackground{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+}
+.HamburgerMenuNavListActive{
+    left: 0;
+}
+.HamburgerMenuBackgroundActive{
+    opacity: 1;
+    left: 0;
+}
+.NavListUl a{
+    text-decoration: none;
+    color: #000;
+}
+.NavListUl a:hover{
+    color: #0F8FAC;
+}

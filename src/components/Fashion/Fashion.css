@@ -1,0 +1,27 @@
+.Fashion{
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+}
+.Fashion h2{
+    width: 50%;
+    font-weight: 300;
+    text-align: center;
+    font-size: 22px;
+}
+.FashionItems{
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.FashionItems .FashionItem:nth-child(2){
+    flex-direction: column-reverse;
+}
+.FashionItems .FashionItem:nth-child(4){
+    flex-direction: column-reverse;
+}

@@ -1,0 +1,64 @@
+.CategoryListItem{
+    width: 300px;
+    display: flex;
+    gap: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    color: #262834;
+}
+.CategoryListItem:hover{
+    color: #0f8fac;
+}
+.CategoryListItem:hover .CategoryListBtn{
+    border: 1px solid #0f8fac;
+}
+.CategoryListItem:hover .CategoryListBtn::after{
+    opacity: 1;
+}
+.CategoryListBtn{
+    aspect-ratio: 1;
+    background-color: transparent;
+    border: 1px solid rgb(186, 186, 186);
+    width: 22px;
+    border-radius: 50%;
+    position: relative;
+    transition:  0.5s ease-in-out;
+}
+.CategoryListBtn::after{
+    content: "";
+    position: absolute;
+    inset: 50%;
+    translate: -50% -50%;
+    width: 5px;
+    height: 10px;
+    border: 1px solid #0f8fac;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin-top: -1px;
+    opacity: 0;
+    transition: 0.3s ease-in-out; 
+}
+.CategoryListBtn:hover{
+    border: 1px solid #0f8fac;
+
+}
+.ActiveCategoryListBtn{
+    border: 1px solid #0f8fac;
+}
+.ActiveCategoryListBtn::after{
+    content: "";
+    position: absolute;
+    inset: 50%;
+    translate: -50% -50%;
+    width: 5px;
+    height: 10px;
+    border: 1px solid #0f8fac;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin-top: -1px;
+    opacity: 1;
+}
+.CategoryListItemSpan{
+    text-transform: capitalize;
+}

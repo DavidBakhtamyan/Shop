@@ -1,0 +1,16 @@
+.FashionItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 25%;
+}
+.FashionItem img{
+    width: 100%;
+    object-fit: scale-down;
+}
+.FashionItem p{
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+}
